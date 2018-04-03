@@ -1,1 +1,4 @@
-CMakeLists.txt not found in /Users/connordepalma/Documents/Git/Matrix
+"/Users/connordepalma/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.4203.549/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/connordepalma/Documents/Git/Matrix
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/connordepalma/Documents/Git/Matrix/cmake-build-debug
