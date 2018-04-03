@@ -8,10 +8,10 @@ public:
     4 5 6 7
 		8 9 10 11
 	 */
-	double& 	operator ()(int i, int j)  {
+	double& operator ()(int i, int j)  {
 		return m[i*cols + j];
 	}
-	double 	operator ()(int i, int j)const {
+	double operator ()(int i, int j)const {
 		return m[i*cols + j];
 	}
 };
