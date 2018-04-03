@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/connordepalma/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.4203.549/CLion.app/Contents/bin/cmake/bin/cmake"
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/connordepalma/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.4203.549/CLion.app/Contents/bin/cmake/bin/cmake" -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/connordepalma/Documents/Git/Matrix
+CMAKE_SOURCE_DIR = /Users/thomasburrell/CLionProjects/Git/Matrix
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/connordepalma/Documents/Git/Matrix/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/thomasburrell/CLionProjects/Git/Matrix/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/Matrix.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/connordepalma/Documents/Git/Matrix/cmake-build-debug
 CMakeFiles/Matrix.dir/all:
 	$(MAKE) -f CMakeFiles/Matrix.dir/build.make CMakeFiles/Matrix.dir/depend
 	$(MAKE) -f CMakeFiles/Matrix.dir/build.make CMakeFiles/Matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/connordepalma/Documents/Git/Matrix/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/thomasburrell/CLionProjects/Git/Matrix/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Matrix"
 .PHONY : CMakeFiles/Matrix.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/Matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connordepalma/Documents/Git/Matrix/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thomasburrell/CLionProjects/Git/Matrix/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Matrix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/connordepalma/Documents/Git/Matrix/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/thomasburrell/CLionProjects/Git/Matrix/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Matrix.dir/rule
 
 # Convenience name for target.
