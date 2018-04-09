@@ -1,31 +1,70 @@
-#include "Matrix.hh"
+//Matrix project header file
 #include <iostream>
+#include <Matrix.hh>
 
 using namespace std;
 
-int main() {
+Matrix::Matrix (int x, int y){
+    //Creates an x by y matrix filled with zeroes
+    rows = x;
+    cols = y;
+    m = new double[rows*cols];
+    for (int i = 0; i < rows; i++){
+      for (int j = 0; j < cols; j++){
+        *(m + i * cols + j) = 0.0;
+      }
+    }
+  }
 
-	/**
-		 0.0  0.0  0.0  0.0
-		 0.0  0.0  0.0  0.0
-		 0.0  0.0  0.0  0.0
-	 */
-	Matrix a(3,4);  // single block of memory 3 * 4 set all to 0.0
+Matrix::Matrix (int x, int y, double z){
+    //Creates an x by y matrix filled with the value z
+    rows = x;
+    cols = y;
+    m = new double[rows*cols];
+    for (int i = 0; i < rows; i++){
+      for (int j = 0; j < cols; j++){
+        *(m + i * cols + j) = z;
+      }
+    }
+  }
 
-	a(1,1) = 1.5;
-	a(2,1) = 3.2;
-		/**
-		 0.0  0.0  0.0  0.0
-		 0.0  1.5  0.0  0.0
-		 3.2  0.0  0.0  0.0
-	 */
+Matrix::double& operator ()(int i, int j)  {
+		return m[i*cols + j];
+	}
 
-	cout << a(1,2) << '\n';
+	// double operator ()(int i, int j)const {
+	// 	return m[i*cols + j];
+	// }
 
-	cout << a;
+  // friend void operator = (double& a, double b);
+Matrix::friend Matrix operator + (Matrix a, Matrix b);
+Matrix::friend Matrix operator * (Matrix a, Matrix b);
+Matrix::friend ostream& operator << (ostream& os, Matrix &b);
 
-	Matrix b(3,4,1.5); // set all values to 1.5
-	Matrix c = a + b;
-	Matrid d(4,3,2.5);
-	Matrix e = b * d; // matrix  mult.
+void operator = (double& a, double b){
+  a = b;
+  return;
+}
+
+Matrix operator + (Matrix a, Matrix b){
+  //Performs Matrix addition
+
+}
+
+  Matrix operator * (Matrix a, Matrix b){
+    //Performs Matrix multiplication
+
+}
+
+ostream& operator << (ostream& os, Matrix &b){
+  double val;
+  for (int i = 0; i < b.rows; i++){
+    for (int j = 0; j < b.cols; j++){
+      val = *(b.m + i * b.cols + j);
+      os << val << ' ';
+    }
+    os << endl;
+  }
+
+  return os;
 }
